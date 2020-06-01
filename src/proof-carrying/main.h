@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include "libs/aes128/aes.h"
+#include "aes.h"
 
 /*
                     Message structure

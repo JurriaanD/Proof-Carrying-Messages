@@ -42,7 +42,7 @@ def read_message(ser: serial.Serial) -> dict:
 
 def main():
    # Check if hexfile exists
-   hexfile = "sensor.hex"
+   hexfile = "proof-carrying.hex"
    if not os.path.isfile(hexfile):
       print("ERROR: File not found:", hexfile)
       sys.exit(2)

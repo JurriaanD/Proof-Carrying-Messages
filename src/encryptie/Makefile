@@ -1,4 +1,4 @@
-BIN = sensor
+BIN = encryptie
 
 # Toolchain
 CC = avr-gcc

@@ -11,7 +11,7 @@ STRIP = avr-strip
 
 MCU = atmega328p
 OBJECTDIR = obj
-SOURCEDIRS += ../SµV ../SµV/crypto
+SOURCEDIRS += ../libs/SµV ../libs/SµV/crypto
 
 CORE_SOURCEFILES += microvisor.c virt_i.S do_copy_data_lpm.S hmac-sha1.c sha1-asm.S string_boot.S
 CORE_SOURCEFILES += sha1-asm.S string_boot.S
@@ -28,7 +28,7 @@ LDFLAGS += -mmcu=$(MCU)
 # compact bootloader with data following text directly, make custom linker
 # script based on avr51.x which combines .bootmem into .bootloader section
 #LDFLAGS += -Wl,--section-start=.bootmem=0x1FF00
-LDFLAGS += -T ../SµV/avr51_bootmem.x
+LDFLAGS += -T ../libs/SµV/avr51_bootmem.x
 
 ### 1K bootloader
 ##LDFLAGS += -Wl,--section-start=.bootloader=0x1FC00 # byte addres, word address = 0xFE00

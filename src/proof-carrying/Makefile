@@ -1,4 +1,4 @@
-BIN = sensor
+BIN = proof-carrying
 
 # Toolchain
 CC = avr-gcc

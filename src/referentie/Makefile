@@ -1,4 +1,4 @@
-BIN = sensor
+BIN = referentie
 
 # Toolchain
 CC = avr-gcc
